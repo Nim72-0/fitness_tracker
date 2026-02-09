@@ -1,0 +1,80 @@
+name: fitness_tracker_app
+description: A fitness tracker app
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Firebase
+  firebase_core: ^4.3.0
+  firebase_auth: ^6.1.3
+  cloud_firestore: ^6.1.1
+  firebase_storage: ^13.0.5
+
+  # Core
+  shared_preferences: ^2.2.2
+  provider: ^6.0.7
+  intl: ^0.20.2
+
+  # Location
+  geolocator: ^14.0.2
+
+  # Steps (Android only - Web ke liye alternative nahi)
+  pedometer: ^4.1.1
+
+  # Health data for iOS steps and broader fitness tracking
+  health: 13.2.1  # Added for iOS compatibility
+
+  # Notifications
+  flutter_local_notifications: ^19.5.0
+  timezone: ^0.10.1
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # Image Picker
+  image_picker: ^1.0.4
+
+  # Permissions handler for runtime requests
+  permission_handler: ^11.3.1  # Upgraded for compatibility with newer Flutter versions
+
+  # Utilities
+  connectivity_plus: ^7.0.0
+  url_launcher: ^6.2.1
+  cached_network_image: ^3.3.0
+
+  # UI
+  flutter_svg: ^2.0.10
+
+  # Using user's fl_chart version
+  fl_chart: ^1.1.1
+  http: ^1.1.0
+  mobile_scanner: ^3.5.5
+  cross_file: ^0.3.5+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    # Food Images
+    - assets/food/breakfast/
+    - assets/food/lunch/
+    - assets/food/dinner/
+    - assets/food/snacks/
+    
+    # Workout Images
+    - assets/workouts/cardio/
+    - assets/workouts/strength/
+    - assets/workouts/hiit/
+    - assets/workouts/yoga/
+  
